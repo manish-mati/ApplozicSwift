@@ -1143,7 +1143,7 @@ open class ALKConversationViewController: ALKBaseViewController, Localizable {
         return cell != nil
     }
 
-    func messageAvatarViewDidTap(messageVM: ALKMessageViewModel, indexPath _: IndexPath) {
+    open func messageAvatarViewDidTap(messageVM: ALKMessageViewModel, indexPath _: IndexPath) {
         // Open chat thread
         guard viewModel.isGroup, isProfileTapActionEnabled else { return }
 
